@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-100 min-h-screen;
+  }
+}
+
+@layer components {
+  .difficulty-btn {
+    @apply px-4 py-2 rounded-lg transition-colors duration-200 font-medium;
+  }
+  .difficulty-btn-active {
+    @apply bg-blue-600 text-white;
+  }
+  .hint-btn {
+    @apply bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition-colors duration-200;
+  }
+}
